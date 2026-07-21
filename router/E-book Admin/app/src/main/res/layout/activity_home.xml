@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/UserCat"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_5px"
+            android:layout_marginEnd="@dimen/_5px"
+            android:layout_marginTop="@dimen/_10px"
+            android:layout_height="@dimen/_200px">
+
+            <ImageView
+                android:id="@+id/ivUser"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200px"
+                android:layout_gravity="start"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_1" />
+
+            <View
+                android:id="@+id/ivHomeUser"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200px"
+                android:layout_gravity="start"
+                android:background="@drawable/rectangle_gradient_home_cat" />
+
+            <TextView
+                android:id="@+id/tvUser"
+                style="@style/txt_OpenSansRomanBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:paddingStart="@dimen/_15px"
+                android:paddingEnd="@dimen/_15px"
+                android:paddingTop="@dimen/_30px"
+                android:paddingBottom="@dimen/_10px"
+                android:singleLine="true"
+                android:text="User Management"
+                android:textColor="@color/home_cat"
+                android:textSize="@dimen/_15sp"
+                tools:text="User Management" />
+        </FrameLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/bookCat"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_5px"
+            android:layout_marginEnd="@dimen/_5px"
+            android:layout_marginTop="@dimen/_10px"
+            android:layout_height="@dimen/_200px">
+
+            <ImageView
+                android:id="@+id/ivBook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200px"
+                android:layout_gravity="start"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img" />
+
+            <View
+                android:id="@+id/ivHomeBook"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200px"
+                android:layout_gravity="start"
+                android:background="@drawable/rectangle_gradient_home_cat" />
+
+            <TextView
+                android:id="@+id/tvBook"
+                style="@style/txt_OpenSansRomanBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:paddingStart="@dimen/_15px"
+                android:paddingEnd="@dimen/_15px"
+                android:paddingTop="@dimen/_30px"
+                android:paddingBottom="@dimen/_10px"
+                android:singleLine="true"
+                android:text="Ebook Management"
+                android:textColor="@color/home_cat"
+                android:textSize="@dimen/_15sp"
+                tools:text="Ebook Management" />
+        </FrameLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/PayCat"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_5px"
+            android:layout_marginEnd="@dimen/_5px"
+            android:layout_marginTop="@dimen/_10px"
+            android:layout_height="@dimen/_200px">
+
+            <ImageView
+                android:id="@+id/ivPay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200px"
+                android:layout_gravity="start"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/img_2" />
+
+            <View
+                android:id="@+id/ivHomePay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200px"
+                android:layout_gravity="start"
+                android:background="@drawable/rectangle_gradient_home_cat" />
+
+            <TextView
+                android:id="@+id/tvPay"
+                style="@style/txt_OpenSansRomanBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:ellipsize="end"
+                android:gravity="top|start"
+                android:paddingStart="@dimen/_15px"
+                android:paddingEnd="@dimen/_15px"
+                android:paddingTop="@dimen/_30px"
+                android:paddingBottom="@dimen/_10px"
+                android:singleLine="true"
+                android:text="Payment Verification"
+                android:textColor="@color/home_cat"
+                android:textSize="@dimen/_15sp"
+                tools:text="Payment Verification" />
+        </FrameLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Logout"
+            android:backgroundTint="#E53935"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
